@@ -178,10 +178,10 @@ async function playTrailer(movieId) {
     const data = await response.json();
     const trailer = data.results.find((video) => video.site === 'YouTube' && video.type === 'Trailer');
 
-    if (trailer) {
+    if (trailer && trailer.key) {
       const videoUrl = `https://www.youtube.com/embed/${trailer.key}`;
       document.getElementById('movie-trailer').innerHTML = `
-        <iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="${videoUrl}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       `;
       document.getElementById('trailer-modal').style.display = 'block';
     } else {
