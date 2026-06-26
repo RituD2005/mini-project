@@ -1,5 +1,5 @@
 # mini-project
-hii
+Movie Recommendation System (MidnightFlix)
 
 
 
