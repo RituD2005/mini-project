@@ -1,5 +1,4 @@
-# mini-project
-Movie Recommendation System (MidnightFlix)
+# Movie Recommendation System (MidnightFlix)
 
 
 
